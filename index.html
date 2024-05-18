@@ -8,6 +8,50 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
-  </body>
+    <div class="container">
+    <form action="/ThankYou.html">
+      <h1>Say Hello!</h1>
+      <label for="name-input">Your Name</label> <br />
+      <input type="text" is="name-inpit" placeholder="Enter your name"
+      required />
+      <span></span>
+      <br/>
+      <hr/>
+      <label for="email-input">Email</label> <br />
+      <input type="text" id="email-input" placeholder="Enter your email address" 
+      required />
+      <span></span>
+      <br />
+      <hr />
+      <label for="service-selection">Needed Services</label>
+      <select id="service-selection" required>
+        <option value="" disabled selected hidden>Choose Services</option>
+        <option value="design">Design services</option>
+        <option value="it-services">IT services</option>
+        <option value="financial">Financial services</option>
+        <option value="security">Security services</option>
+        <option value="unlisted">Something else?</option>
+      </select>
+      <br />
+      <hr />
+      <label for="budget-selection">Budegt</label>
+      <select id="budget-selection" required>
+        <option value="" disabled selected hidden>Select Budget</option>
+        <option value="budget-1">£0-£5000</option>
+        <option value="budget-2">£5001-£10,000</option>
+        <option value="budget-3">£10,001-£15,000</option>
+        <option value="budget-4">£15,001-£20,000</option>
+        <option value="budget-5">£20,000 + </option>
+      </select>
+      <br />
+      <hr />
+      <label for="message">Message</label> <br />
+      <input id="message" tpye="textarea" placeholder="Your message here..." /> 
+      <span></span>
+      <br />
+      <hr />
+      <a href="/ThankYou.html"><input id="submit-button" type="submit" value="submit &#8594;"/></a>
+    </form>
+  </div>
+</body>
 </html>
